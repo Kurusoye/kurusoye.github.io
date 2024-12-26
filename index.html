@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopUni Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9; /* Light grayish white */
+            color: #333; /* Dark gray */
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, #0d47a1, #42a5f5); /* Fresh blue gradient */
+            padding: 1.5rem;
+        }
+
+        .navbar .logo h1 {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .navbar nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar nav ul li {
+            margin-left: 2rem;
+        }
+
+        .navbar nav ul li a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        .navbar nav ul li a:hover {
+            color: #ffca28; /* Fresh yellow hover effect */
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: #42a5f5; /* Sky blue */
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons button {
+            background-color: #ffca28; /* Fresh yellow */
+            color: #0d47a1; /* Deep blue */
+            border: none;
+            padding: 0.8rem 2rem;
+            margin: 0 0.5rem;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-buttons button:hover {
+            background-color: #ffd740; /* Lighter yellow */
+        }
+
+        /* Features Section */
+        .features {
+            background-color: #e3f2fd; /* Light blue */
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .features .feature {
+            margin-bottom: 2rem;
+        }
+
+        .features h3 {
+            color: #0d47a1; /* Deep blue */
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .features p {
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0d47a1; /* Deep blue */
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        footer ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin-top: 1rem;
+        }
+
+        footer ul li {
+            margin: 0 1rem;
+        }
+
+        footer ul li a {
+            color: white;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer ul li a:hover {
+            color: #ffca28; /* Fresh yellow hover effect */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>TopUni Finder</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search Universities</a></li>
+                    <li><a href="rankings.html">Rankings</a></li>
+                    <li><a href="scholarships.html">Scholarships</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>CollageMind-д тавтай морил</h2>
+            <p>Тусгай ойлголт, зааварчилгаагаар дэлхийн шилдэг их сургуулиудыг олж мэдээрэй.</p>
+            <div class="cta-buttons">
+                <button onclick="window.location.href='search.html'">Их дээд сургуулиудыг хайх</button>
+                <button onclick="window.location.href='rankings.html'">Чансаа харах</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <h3>Comprehensive Search</h3>
+                <p>Дэвшилтэт шүүлтүүр ашиглан их сургуулиудыг хөтөлбөр, байршил гэх мэтээр хайж олоорой.</p>
+            </div>
+            <div class="feature">
+                <h3>Accurate Rankings</h3>
+                <p>Итгэмжлэгдсэн эх сурвалжаас хамгийн сүүлийн үеийн их сургуулийн зэрэглэлд хандах.</p>
+            </div>
+            <div class="feature">
+                <h3>Scholarship Guidance</h3>
+                <p>Дэлхий даяар тэтгэлэг, санхүүгийн тусламжийн боломжуудыг судлаарай.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CollageMind. All Rights Reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+
